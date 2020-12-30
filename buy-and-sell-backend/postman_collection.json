@@ -1,0 +1,29 @@
+{
+	"info": {
+		"_postman_id": "8774fb74-1b93-41d8-82fa-8c246884af11",
+		"name": "Angular-Creating-Hosting-Full-Stack-Site-linkedin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/listings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"listings"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
