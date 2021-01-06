@@ -28,6 +28,8 @@ limitations under the License.
 
     <link rel="stylesheet" href="main.css">
 
+    <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/veaa02889f0c07424beaa31d9bac1e874b6464e7ed7987fde4c94a59ace9487fa/firebase/images/favicon.png">
+
     <!-- Import and configure the Firebase SDK -->
     <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
     <!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
@@ -76,10 +78,7 @@ limitations under the License.
             if (firebase.auth().currentUser) {
                 firebase.auth().signOut();
             } else {
-                alert("toggleSignInGoogle");
                 firebase.auth().signInWithPopup(new firebase.auth.GoogleAuthProvider()).catch(function (error) {
-                    alert("toggleSignInGoogle");
-
                     // Handle Errors here.
                     var errorCode = error.code;
                     var errorMessage = error.message;
