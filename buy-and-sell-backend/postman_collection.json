@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Get",
+			"name": "Get All Listings",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -19,6 +19,37 @@
 					"port": "8000",
 					"path": [
 						"api",
+						"listings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Listings",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authtoken",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImUwOGI0NzM0YjYxNmE0MWFhZmE5MmNlZTVjYzg3Yjc2MmRmNjRmYTIiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiQ2FybG9zIEJlbml0ZXoiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EtL0FPaDE0R2lwX1VQR3JaNGktOXBhTFBtLWRoSkVhdEk3dWc3VEZja3dwYzlNcVE9czk2LWMiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vYnV5LWFuZC1zZWxsLWIyN2I0IiwiYXVkIjoiYnV5LWFuZC1zZWxsLWIyN2I0IiwiYXV0aF90aW1lIjoxNjA5OTUxMjM3LCJ1c2VyX2lkIjoiYUV4QW9ZVTJPVVpualA2YndFRkRXQnR5d3g1MyIsInN1YiI6ImFFeEFvWVUyT1VabmpQNmJ3RUZEV0J0eXd4NTMiLCJpYXQiOjE2MDk5NTEyMzcsImV4cCI6MTYwOTk1NDgzNywiZW1haWwiOiJjYS5iZW5pdGV6Lm1AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZ29vZ2xlLmNvbSI6WyIxMDkxODQ5MDc1ODM4OTM3NzE2MDIiXSwiZW1haWwiOlsiY2EuYmVuaXRlei5tQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6Imdvb2dsZS5jb20ifX0.wYPQT2hM3PaUdTPoPy126fiE9o9GCfcF7Rtak5Zc2C8a0kLSE4FMZMc8OQrGJGZprW7aKdT2QYEujlvIkKVAAo2Mbw5sjdi0C3d0v-Fnzb6BZNvLD81xzUcxge0QF4sRIBm6VsbtXpJrQmXs-qE-Bfr0msFT5gUXhJwYzjeZgGoI0O3aKkj1uUd_Hm4KFHKnmS-b-wzmDb0w9Sf3DvzH8acFJYvAvdJHZ-Od6b6oFuYtx5DvtPsHFH6TxYnxeTr3BVtUnZWiQ1fCMcZfYlsLNHkMrNXzfJUmUwIT0y8C1WqNd23E6RW5yBeDPl8vM_UzN9LUdTDUfYw-26P6DPUtCQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/users/aExAoYU2OUZnjP6bwEFDWBtywx53/listings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"aExAoYU2OUZnjP6bwEFDWBtywx53",
 						"listings"
 					]
 				}
